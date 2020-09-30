@@ -1,10 +1,12 @@
 #!/bin/sh
 
-PROJECTS_DIR=${HOME}/code
+PROJECTS_DIR=${HOME}/Code
 
 # setup folder structure
 mkdir ${PROJECTS_DIR}
-mkdir ${HOME}/github
+mkdir ${HOME}/Zero31
+mkdir ${HOME}/CasaMineira
+mkdir ${HOME}/Freelancer
 
 # brew setup
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,258 +14,70 @@ mkdir ${HOME}/github
 brew update
 brew upgrade --all
 
+
 # Apps
-brew install automake
-brew install chromedriver
-brew install cloc
-brew install cmake
 brew install composer
-brew install coreutils
-brew install cscope
-brew install ctags
-brew install curl
-brew install diff-so-fancy
-brew install dirmngr
-brew install dnsmasq
-# brew install docker
-# brew install fish
-brew install flow
-brew install fontconfig
-brew install freetype
-brew install gdbm
-brew install gettext
-brew install ghc
-brew install git
-brew install git-flow
-brew install git-flow-avh
-# brew install gitlab-ci-multi-runner
-# brew install gmp
-# brew install gnupg
-# brew install gnupg2
-# brew install go
-brew install gpg-agent
-# brew install gradle
-# brew install heroku
-# brew install htop-osx
-brew install httpie
-brew install icu4c
-brew install jpeg
-# brew install leiningen
-brew install libassuan
-brew install libffi
-brew install libgcrypt
-brew install libgpg-error
-brew install libksba
-brew install libpng
-# brew install libtermkey
-brew install libtool
-brew install libusb
-brew install libusb-compat
-# brew install libuv
-# brew install libvterm
-brew install libxml2
-brew install libyaml
-brew install lua
-# brew install luajit
-# brew install macvim
-# brew install msgpack
-# brew install mtr
-brew install mysql
-# brew install neovim
+brew install docker
 brew install node
-brew install nvm
-brew install openssl
-# brew install pandoc
-# brew install passpie
-brew install pcre
-brew install pcre2
-brew install perl
 brew install php-cs-fixer
-brew install php56
-brew install php56-xdebug
-brew install php56-mcrypt
-brew install php70
-brew install php70-xdebug
-brew install php70-mcrypt
-brew install php71
-brew install php71-xdebug
-brew install php71-mcrypt
-brew install phpunit
-brew install pinentry
-# brew install pixman
-brew install pkg-config
-# brew install postgresql
-# brew install pth
-# brew install pwgen
-brew install python
-# brew install python3
-brew install redis
-brew install readline
-brew install ruby
-# brew install sphinx-doc
-brew install sqlite
-brew install ssh-copy-id
-brew install thefuck
-# brew install tidy-html5
-# brew install unibilium
-# brew install unixodbc
-# brew install watchman
-brew install wget
-brew install xz
-brew install yarn
 brew install zsh
-brew install zsh-autosuggestions
-brew install zsh-completions
+
 
 # OSX native apps
-brew tap caskroom/cask
-brew tap caskroom/versions
-
-function installcask() {
-    brew cask install "${@}" --force 2> /dev/null
-}
-
-installcask adapter
-# installcask aegisub
-installcask appcleaner
-# installcask arduino
-# installcask atom
-# installcask cyberduck
-# installcask datagrip
-# installcask dbeaver-enterprise
-installcask discord
-# installcask docker
-installcask dropbox
-installcask filezilla
-installcask firefox
-# installcask flickr-uploadr
-installcask flux
-# installcask fork
-# installcask franz
-# installcask fritzing
-# installcask genymotion
-installcask gitkraken
-installcask google-chrome
-# installcask google-chrome-canary
-# installcask google-earth
-installcask google-photos-backup-and-sync
-# installcask google-play-music-desktop-player
-# installcask harvest
-installcask handbrake
-installcask imageoptim
-# installcask insomnia
-# installcask intellij-idea
-installcask iterm2
-installcask java
-# installcask jubler
-installcask kap
-installcask keepingyouawake
-installcask lastpass
-installcask libreoffice
-# installcask macdown
-# installcask macpass
-installcask marp
-# installcask mattermost
-# installcask meld
-# installcask mplayerx
-# installcask mysqlworkbench
-installcask netspot
-# installcask paw
-# installcask pgadmin4
-installcask phpstorm
-installcask poedit
-installcask postman
-# installcask pycharm
-installcask rest
-installcask robomongo
-# installcask rubymine
-installcask screenhero
-installcask sequel-pro
-# installcask sketchup
-installcask skitch
-installcask skype
-installcask slack
-# installcask smartgit
-# installcask sourcetree
-installcask spectacle
-installcask spotify
-installcask sqlitebrowser
-# installcask sqlpro-studio
-# installcask stremio
-installcask sublime-text
-# installcask subtitle-master
-installcask telegram
-# installcask teamviewer
-installcask toggldesktop
-# installcask totalterminal
-# installcask tunnelblick
-# installcask vagrant
-# installcask vagrant-manager
-# installcask valentina-studio
-installcask virtualbox
-# installcask virtualbox-extension-pack
-# installcask visual-studio
-# installcask visual-studio-code
-installcask vlc
-# installcask vmware-fusion
-# installcask webstorm
-# installcask whatsapp
-# installcask xquartz
-installcask xtrafinder
-# installcask zazu
-
-# :: Missing apps
-# Gifox
-# Bear Writer (AppStore)
-# Alfred 3
-# Transmit
-# Monosnap (AppStore)
-# Wunderlist (AppStore)
-# Airmail (AppStore)
-# Bandwidth+ (AppStore)
-# Memory Clean 2 (AppStore)
-# Tweetdeck (AppStore)
-
-# Install oh-my-zsh
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-chsh -s /usr/local/bin/zsh
+brew cask install 1password
+brew cask install alfred
+brew cask install alt-c
+brew cask install caffeine
+brew cask install discord
+brew cask install dropbox
+brew cask install evernote
+brew cask install firefox-developer-edition
+brew cask install gifox
+brew cask install google-chrome
+brew cask install harvest
+brew cask install iterm2
+brew cask install keka
+brew cask install phpstorm
+brew cask install sequel-ace
+brew cask install skitch
+brew cask install slack
+brew cask install spotify
+brew cask install telegram
+brew cask install tinkerwell
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
+brew cask install visual-studio-code
+brew cask install whatsapp
 
 # Fonts
-brew tap caskroom/fonts
-brew install font-hack
-brew install font-fira-code
-brew install font-source-code-pro
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
-# npm dependencies that I'm not likely to live without
-# npm install -g adonis-cli
-# npm install -g angular-cli
-# npm install -g babel-eslint
-# npm install -g bower
-# npm install -g cbt_tunnels
-# npm install -g express-generator
-# npm install -g firebase-tools
-# npm install -g grunt
-# npm install -g grunt-cli
-npm install -g gulp
-# npm install -g http-server
-# npm install -g ied
-# npm install -g nativescript
-npm install -g npm
-# npm install -g npm-check-updates
-# npm install -g pug
-# npm install -g react-native-cli
-# npm install -g standard
-# npm install -g ungit
-# npm install -g wcwidth
+# NPM
+npm install -g @bchatard/alfred-jetbrains
 
-## Get dotfiles repo and setup symlinks
-git clone https://github.com/jgrossi/dotfiles.git ${PROJECTS_DIR}/dotfiles
-cd ${HOME}
-# ln -si ${PROJECTS_DIR}/dotfiles/.oh-my-zsh/themes/af-magic-mine.zsh-theme .oh-my-zsh/themes/af-magic-mine.zsh-theme
-ln -si ${PROJECTS_DIR}/dotfiles/.aliases .aliases
-ln -si ${PROJECTS_DIR}/dotfiles/.bash_profile .bash_profile
-ln -si ${PROJECTS_DIR}/dotfiles/.env .env
-ln -si ${PROJECTS_DIR}/dotfiles/.gitconfig .gitconfig
-ln -si ${PROJECTS_DIR}/dotfiles/.gitignore_global .gitignore_global
-# ln -si ${PROJECTS_DIR}/dotfiles/.vimrc .vimrc
-ln -si ${PROJECTS_DIR}/dotfiles/.zshrc .zshrc
+
+# :: Missing apps
+# Airmail Beta
+# BetterSnapTool
+# Captured
+# TotalFinder
+# Transmit
+# Memory Clean 2
+# Powerline Font
+
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/jerguslejko/zsh-symfony-completion.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/symfony-console
+
+autoload -U compinit && compinit
