@@ -24,31 +24,27 @@ brew install zsh
 
 
 # OSX native apps
-brew cask install 1password
-brew cask install alfred
-brew cask install alt-c
-brew cask install caffeine
-brew cask install discord
-brew cask install dropbox
-brew cask install evernote
-brew cask install firefox-developer-edition
-brew cask install gifox
-brew cask install google-chrome
-brew cask install harvest
-brew cask install iterm2
-brew cask install keka
-brew cask install phpstorm
-brew cask install sequel-ace
-brew cask install skitch
-brew cask install slack
-brew cask install spotify
-brew cask install telegram
-brew cask install tinkerwell
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install whatsapp
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask alt-c
+brew install --cask caffeine
+brew install --cask discord
+brew install --cask dropbox
+brew install --cask evernote
+brew install --cask gifox
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask keka
+brew install --cask phpstorm
+brew install --cask skitch
+brew install --cask slack
+brew install --cask spotify
+brew install --cask telegram
+brew install --cask tinkerwell
+brew install --cask vagrant
+brew install --cask virtualbox
+brew install --cask visual-studio-code
+brew install --cask whatsapp
 
 # Fonts
 git clone https://github.com/powerline/fonts.git --depth=1
